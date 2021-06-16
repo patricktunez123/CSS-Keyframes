@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: magenta;
+  width: 30%;
+  height: 30%;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-animation-name: cardAnimator;
+          animation-name: cardAnimator;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes cardAnimator {
+  0% {
+    width: 30%;
+    height: 30%;
+  }
+  40% {
+    background: purple;
+  }
+  100% {
+    width: 60%;
+    height: 60%;
+    background: pink;
+  }
+}
+
+@keyframes cardAnimator {
+  0% {
+    width: 30%;
+    height: 30%;
+  }
+  40% {
+    background: purple;
+  }
+  100% {
+    width: 60%;
+    height: 60%;
+    background: pink;
+  }
+}
+/*# sourceMappingURL=style.css.map */

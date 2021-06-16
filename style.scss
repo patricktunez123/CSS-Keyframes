@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.card {
+  //   background: linear-gradient(left right, blue, cyan);
+  background: magenta;
+  width: 30%;
+  height: 30%;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  animation-name: cardAnimator;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+// .card:hover {
+//   animation-name: cardAnimator;
+//   animation-duration: 400ms;
+//   animation-delay: 0s;
+//   animation-timing-function: ease-in-out;
+//   // animation-iteration-count: infinite;
+// }
+
+// @keyframes cardAnimator {
+//   from {
+//     margin-bottom: 0;
+//   }
+//   to {
+//     margin-bottom: 30px;
+//   }
+// }
+
+// @keyframes cardAnimator {
+//   from {
+//     width: 30%;
+//     height: 30%;
+//   }
+//   to {
+//     width: 60%;
+//     height: 60%;
+//     background: pink;
+//   }
+// }
+
+@keyframes cardAnimator {
+  0% {
+    width: 30%;
+    height: 30%;
+  }
+  40% {
+    background: purple;
+  }
+  100% {
+    width: 60%;
+    height: 60%;
+    background: pink;
+  }
+}
